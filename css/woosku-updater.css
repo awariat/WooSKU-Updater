@@ -1,0 +1,20 @@
+/* Target the search input field and its container */
+#wooSKUUpdaterWrapper .dt-search {
+   padding: 16px;
+}
+
+/* Target the entries dropdown */
+#wooSKUUpdaterWrapper .dt-length {
+    padding: 16px;
+}
+
+/* Target the "showing entries" text */
+#wooSKUUpdaterWrapper .dt-info {
+    padding: 16px;
+}
+
+/* Target the pagination controls */
+#wooSKUUpdaterWrapper .dt-paging {
+    padding: 16px;
+}
+
