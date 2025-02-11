@@ -257,6 +257,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const price = priceInput.value.trim();
         const productId = button.getAttribute('data-product-id');
 
+        // Save current page before refresh
+        const currentPage = table.page();
+
         // Disable inputs and button during save
         quantityInput.classList.remove('bg-info', 'text-white');
 
@@ -296,7 +299,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 quantityInput.disabled = false;
                 priceInput.disabled = false;
 
-                table.draw(); // Refresh the table
+            // Redraw table without changing the page
+            table.draw(false); 
+            table.page(currentPage).draw(false);
             });
     }
 
